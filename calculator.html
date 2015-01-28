@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Calculadora HTML</title>
+
+<style>
+	#pt{
+		width:350px;
+		height:105px;
+		font-size: 100px;
+		color:black;
+		border: 5px solid #CB2528;
+		border-radius:20px;	
+		background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 100%,#6d0019 100%);		
+	}	
+	
+	button{
+		width: 80px;
+		height: 80px;
+		background: -webkit-linear-gradient(top, #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%);
+		border-color:#000000;
+		border-radius:30px;	
+		font-size: 50px;	
+	}
+	
+	button:hover{
+		background:#FF0004	
+	}
+	
+	td{
+		text-align:center;
+	}
+	
+	table{
+		border:solid 5px;
+		border-radius:10px;
+		background: -webkit-linear-gradient(top, #f2825b 0%,#e55b2b 50%,#f07146 100%);		
+	}
+</style>
+
+</head>
+<body>
+<center>
+	<table border = "0" width="300" height = "300" >
+    <!-- fila1 -->
+    	<tr>
+        	<td colspan = "4" div align="center">
+            	<input type = "text" id = "pt">
+            </td>
+        </tr>
+    <!-- fila2 -->
+    	<tr>
+        	<td><button onClick = "pt.value = pt.value + 1">1</button></td>
+        	<td><button onClick = "pt.value = pt.value + 2">2</button></td>
+        	<td><button onClick = "pt.value = pt.value + 3">3</button></td>
+        	<td><button onClick = "pt.value = pt.value + 4">4</button></td>
+        </tr>
+    <!-- fila3 -->
+    	<tr>
+        	<td><button onClick = "pt.value = pt.value + 5">5</button></td>
+        	<td><button onClick = "pt.value = pt.value + 6">6</button></td>
+            <td><button onClick = "pt.value = pt.value + 7">7</button></td>
+            <td><button onClick = "pt.value = pt.value + 8">8</button></td>
+        </tr>
+    <!-- fila4 -->
+    	<tr>
+        	<td><button onClick = "pt.value = pt.value + 9">9</button></td>
+            <td><button onClick = "pt.value = pt.value + 0">0</button></td>
+            <td><button onClick = "pt.value = eval(pt.value)">=</button></td>
+            <td><button onClick = "pt.value = ''">C</button></td>
+        </tr>
+    <!-- fila6 -->
+    	<tr>
+        	<td><button onClick = "pt.value = pt.value + '+'">+</button></td>
+            <td><button onClick = "pt.value = pt.value + '-'">-</button></td>
+            <td><button onClick = "pt.value = pt.value + '*'">*</button></td>
+            <td><button onClick = "pt.value = pt.value + '/'">/</button></td>
+        </tr>
+    </table>
+</center>
+</body>
+</html>
