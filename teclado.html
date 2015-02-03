@@ -2,9 +2,138 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>Teclado</title>
 </head>
+<style type="text/css">
+
+	table{
+		border: solid 10px;
+		border-radius:20px;
+		height:300px;
+		width:1100px;
+		font-size:25px;
+		align-content:center;
+		
+	}
+	
+	button{
+		width: 50px;
+		height: 50px;
+		font-size:30px;
+	}
+	
+	bs{
+		width: 100px;
+	}
+	
+	function deleteChar(){
+		xpl= document.Calc.screen.value;
+		xpl= xpl.substring(0,xpl.length-1)
+		document.Calc.screen.value= xpl
+	}
+</style>
 
 <body>
+	<table border="0" div align="center">
+    	<tr>
+        	<td colspan="21" div align = "center">
+            	Teclado HTML
+                <br>
+                <input type = "text" id = "xpl">
+                <hr>
+            </td>
+        </tr>
+        
+        <tr>        	
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 1">1</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 2">2</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 3">3</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 4">4</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 5">5</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 6">6</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 7">7</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 8">8</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 9">9</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 0">0</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + '-'">-</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + '='">=</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.deleteChar()">Backspace</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + '/'">/</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + '*'">*</td>
+            <td colspan="2"><button id="btn" onClick = "xpl.value = xpl.value + '-'">-</td> 
+        </tr>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'q'">q</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'w'">w</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'e'">e</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'r'">r</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 't'">t</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'y'">y</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'u'">u</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'i'">i</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'o'">o</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'p'">p</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + '['">[</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + ']'">]</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + '&rsquo;'">\</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + '7'">7</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + '8'">8</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + '9'">9</td>        
+            <td rowspan=""><button id="btn" onClick = "xpl.value = xpl.value + '+'">+</td>
+        <tr>
+        	<td>&nbsp;&nbsp;</td>
+        	<td><button id="btn" onClick = "xpl.value = xpl.value + 'a'">a</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 's'">s</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'd'">d</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'f'">f</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'g'">g</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'h'">h</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'j'">j</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'k'">k</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'l'">l</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + ';'">;</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + '&'">'</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + '1'">4</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + '2'">5</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + '3'">6</td>
+        </tr>
+        	<td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+        	<td><button id="btn" onClick = "xpl.value = xpl.value + 'z'">z</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'x'">x</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'c'">c</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'v'">v</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'b'">b</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'n'">n</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + 'm'">m</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + ','">,</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + '.'">.</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + '/'">/</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + '1'">1</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + '2'">2</td>
+            <td><button id="btn" onClick = "xpl.value = xpl.value + '3'">3</td>
+        <tr>
+        </tr>
+        
+        <tr>
+        </tr>
+    </table>	
 </body>
 </html>
